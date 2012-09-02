@@ -41,6 +41,6 @@ gem 'jquery-rails', '2.0.2'
 # gem 'debugger'
 gem 'devise'
 
-
+gem 'skeleton-rails'
 #For authenticating users baby
 
