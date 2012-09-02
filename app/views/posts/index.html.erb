@@ -1,0 +1,21 @@
+<h1>I <3 SF</h1>
+<h3>... Because we found love in a hopeless place</h3>
+<%= link_to 'New Post', new_post_path %>
+
+<br />
+<br />
+
+<% @posts.each do |post| %>
+
+<p><%= post.content %></td></p>
+<p>-<%= post.attribution %> in <%= post.neighborhood %></p>
+<%= link_to 'Show', post %>
+<%= link_to 'Edit', edit_post_path(post) %>
+<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+
+
+
+<br />
+
+
