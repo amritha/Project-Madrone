@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!,  :only => [:edit, :update, :destroy, :create, :new]
+  before_filter :is_owner, :only => [:edit, :update, :destroy]
   # GET /posts
   # GET /posts.json
   def index
