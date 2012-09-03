@@ -12,7 +12,8 @@
 
 <li><%= post.content %></li>
 <li><%= post.attribution %> in <%= post.neighborhood %> 
-<span class="post-date"><%=time_ago_in_words(post.created_at) %> ago</span></li> 
+<span class="post-date"><%=time_ago_in_words(post.created_at) %> ago</span></li>
+<li> <%= bucket((post.neighborhood)) %> </li> 
 
 <% end %>
 </ul>
