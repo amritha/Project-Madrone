@@ -11,8 +11,8 @@
 <% @posts.each do |post| %>
 
 <li><%= post.content %></li>
-<li><%= post.attribution %> in <%= post.neighborhood %> on
-<span class="post-date"><%= l post.created_at %></span></li> 
+<li><%= post.attribution %> in <%= post.neighborhood %> 
+<span class="post-date"><%=time_ago_in_words(post.created_at) %> ago</span></li> 
 
 <% end %>
 </ul>

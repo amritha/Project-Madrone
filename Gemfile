@@ -44,3 +44,7 @@ gem 'devise', '2.1.2'
 gem 'skeleton-rails'
 #For authenticating users baby
 
+group :production do
+  gem 'pg', '0.12.2'
+end
+

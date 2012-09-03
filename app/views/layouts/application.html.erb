@@ -11,7 +11,9 @@
        <p class="alert"><%= alert %></p>
        <div class="user-auth-nav" style="float:right">
   <% if user_signed_in? %>
-  <%= link_to('Edit registration', edit_user_registration_path) %> | 
+  <!--
+  Don't want this edit registration crap
+  <%= link_to('Edit registration', edit_user_registration_path) %> -->
   <%= link_to('Logout', destroy_user_session_path) %> 
   <% else %>
   <%= link_to('Login', new_user_session_path)  %> | 
