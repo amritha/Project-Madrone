@@ -39,10 +39,14 @@ gem 'jquery-rails', '2.0.2'
 
 # To use debugger
 # gem 'debugger'
+
+#For authenticating users baby
 gem 'devise', '2.1.2'
 
 gem 'skeleton-rails'
-#For authenticating users baby
+
+#turning up the voltages for static pages
+gem 'high_voltage', '1.2.0'
 
 group :production do
   gem 'pg', '0.12.2'
