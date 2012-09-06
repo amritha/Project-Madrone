@@ -13,9 +13,8 @@
        <p class="alert"><%= alert %></p>
        <div class="user-auth-nav" style="float:right">
         
-<%= link_to 'New Post', new_post_path %> |
 
-    <%= link_to 'About', page_path('about') %> |
+    
    <% if user_signed_in? %>
  
   <!-- Don't want this edit registration crap or to show logout
