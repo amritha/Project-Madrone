@@ -48,6 +48,9 @@ gem 'skeleton-rails'
 #turning up the voltages for static pages
 gem 'high_voltage', '1.2.0'
 
+#let's get some admins up in hurr
+gem 'rails_admin'
+
 group :production do
   gem 'pg', '0.12.2'
 end
