@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" src="//use.typekit.net/his8qus.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <title>Projectmadrone</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -29,6 +31,7 @@
 
 
 <%= yield %>
+
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">
 <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
@@ -37,6 +40,11 @@
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5044e74a340738c5"></script>
 <!-- AddThis Button END -->
-
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("select").selectBox();
+  });
+</script>
 </body>
 </html>
+

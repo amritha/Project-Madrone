@@ -1,3 +1,7 @@
+<script src="jquery.selectbox.min.js" type="text/javascript"></script>
+
+<article class="new">
+
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -13,17 +17,18 @@
 
   <div class="field">
 
-    <%= f.text_area :content %>
+ <%= f.text_area :content, :class=> 'content' %>
   </div>
-  <div class="field">
+<div class="field">
+  <%= f.text_field :attribution, :value => 'Anonymous', :class => 'author' %>
+  </div>
 
-    <%= f.text_field :attribution, :value => 'Anonymous' %>
-  </div>
-  <div class="field">
-    <%= f.label :neighborhood %><br />
-    <%= f.collection_select :neighborhood, Post::NEIGHBORHOODS, :to_s, :to_s %>
-  </div>
+  <div id="bottom" class="clearfix">
+    <%= f.label :neighborhood, :class => 'label' %><br />
+  <%= f.collection_select :neighborhood, Post::NEIGHBORHOODS, :to_s, :to_s %>
   <div class="actions">
-    <%= f.submit "Submit"%>
-  </div>
+    <%= f.submit "Submit", :class => 'submit' %>
+  </div> <!-- end actions -->
+  </div> <!--end bottom -->
 <% end %>
+</article>

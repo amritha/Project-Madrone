@@ -1,5 +1,25 @@
-<h1>Tell us your story</h1>
+<div class="container">
+	
+<header class="clearfix">
+<ul>
+<li class="logo"><h1>I <span class="heart">&#x2764;</span> SF</h1>
+<h2>We found love in a hopeless place.</h2>
+</li>
+<nav>
+<li class="new"><h3><%= link_to 'New Post', new_post_path %></h3></li>
+<li class="about"><h3><a href="about.html">About</a></h3></li>
+</nav>
+</ul>
+</header>
+
+<h1 class="prompt">Tell us your story.</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Cancel', posts_path %>
+<h4 class="Cancel"><%= link_to 'Cancel', posts_path %></h4>
+
+</div> <!-- end container -->
+
+<footer class="container">
+<p>Smashed + Banged by <a href="http://twitter.com/sabrina">@sabrina</a> and <a href="http://twitter.com/amrithap">@amrithap</a></p>
+</footer>

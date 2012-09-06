@@ -1,3 +1,64 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#story {
+	float:left;
+	height: 300px;
+	background-color: #fbfbf8;
+	border: 1px solid #ebeae0;
+	border-bottom: 4px solid #92adc8;
+	border-radius: 5px;
+	margin: 8px 8px;
+	
+	#top {
+		height: 254px;	
+	}
+}
+
+p.content, p.neighborhood { padding: 20px 24px 0px 24px; }
+
+p.content {
+	color: #333;
+	line-height: 1.5em;
+}
+
+p.author {
+	text-transform: uppercase;
+	color: #c7cbcd;
+	font-size: .8em;
+	letter-spacing: .2em;
+	padding: 10px 24px;
+}
+
+p.neighborhood {
+	text-transform: uppercase;
+	color: #679358;
+	font-size: .8em;
+	letter-spacing: .2em;
+}
+
+/* Responsive Posts & Stuff */
+
+@media only screen and (max-width: 767px) {
+
+#story { margin: 8px 0; }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+#story { height: 250px;	
+	
+	#top { height: 204px; }
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+#story { height: 350px;	
+	
+	#top { height: 304px; }
+	}
+}
