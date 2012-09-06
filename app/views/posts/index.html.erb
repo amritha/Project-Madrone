@@ -22,7 +22,12 @@
      <p class="author">-<%= post.attribution %></p>
    </div><!--end top -->
    <p class="neighborhood"><%= post.neighborhood %></p>
-   <!--<span class="post-date"><%=time_ago_in_words(post.created_at) %> ago</span>
+   <!--
+	Here's the time stamp in a format that should work for you
+
+   <%=time_ago_in_words(post.created_at) %> ago
+
+	Here's the neighborhood variable that you were looking for
    <%= bucket((post.neighborhood)) %>-->
 </div> <!-- end story -->
 
