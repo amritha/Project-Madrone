@@ -17,7 +17,8 @@
 
   <div class="field">
 
- <%= f.text_area :content, :class=> 'content' %>
+ <%= f.text_area :content, :class=> 'content', :maxlength => '250'%>
+
   </div>
 <div class="field">
   <%= f.text_field :attribution, :value => 'Anonymous', :class => 'author' %>
