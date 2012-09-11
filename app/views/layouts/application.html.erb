@@ -7,6 +7,21 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <header class="clearfix">
+<div class="container">
+  
+<header class="clearfix">
+<ul>
+<li class="logo"><h1><a href="<%= root_path %>">I <span class="heart">&#x2764;</span> SF</a></h1>
+<h2>We found love in a hopeless place.</h2>
+</li>
+<nav>
+<li class="new"><h3><%= link_to 'New Post', new_post_path %></h3></li>
+<li class="about"><h3><%= link_to 'About', page_path('about') %></h3></li>
+</nav>
+</ul>
+</header>
+</div>
 </head>
 <body>
  <p class="notice"><%= notice %></p>
@@ -45,5 +60,8 @@
   });
 </script>
 </body>
+<footer class="container">
+<p>Smashed + Banged by <a href="http://twitter.com/sabrina">@sabrina</a> and <a href="http://twitter.com/amrithap">@amrithap</a></p>
+</footer>
 </html>
 
