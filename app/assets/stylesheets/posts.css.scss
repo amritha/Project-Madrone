@@ -10,15 +10,68 @@
 	border: 1px solid #ebeae0;
 	border-bottom: 4px solid #92adc8;
 	border-radius: 5px;
-	margin: 8px 8px;
+	margin: 8px 0px;
 	
 	.top {
 		height: 254px;	
 	}
 	
 	&.mission-time {
-	border-bottom: #000 4px solid;
+	border-bottom: #92adc8 4px solid;
+		
+		p.neighborhood { color: #679358; }
+		 
 	}
+	
+	&.downtown {
+	border-bottom: #c7cbcd 4px solid;
+		
+		p.neighborhood { color: #7288a0; }
+		 
+	}
+	
+	&.alamo-squarea {
+	border-bottom: #679358 4px solid;
+		
+		p.neighborhood { color: #8e4d24; }
+		 
+	}
+	
+	&.marina-time{
+	border-bottom: #92adc8 4px solid;
+		
+		p.neighborhood { color: #8e4d24; }
+		 
+	}
+
+	&.pac-heights {
+	border-bottom: #ad9973 4px solid;
+		
+		p.neighborhood { color: #4a2112; }
+		 
+	}
+	
+	&.castroish {
+	border-bottom: #bacac7 4px solid;
+		
+		p.neighborhood { color: #4a2112; }
+		 
+	}
+	
+	&.sketchville {
+	border-bottom: #c7cbcd 4px solid;
+		
+		p.neighborhood { color: #8e4d24; }
+		 
+	}
+
+	&.nowhereland {
+	border-bottom: #a8bfad 4px solid;
+		
+		p.neighborhood { color: #7288a0; }
+		 
+	}
+		
 }
 
 p.content, p.neighborhood { padding: 20px 24px 0px 24px; }

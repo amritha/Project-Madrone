@@ -9,7 +9,7 @@ module PostsHelper
             then "Alamo-Squarea"
 
             when "Lower Pac Heights", "Western Addition", "Fillmore", "Japantown", "Laurel Heights"
-            then "Pac-Heights-Area"
+            then "Pac-Heights"
 
             when "Marina", "Cow Hollow", "Fishermans Wharf", "Pacific Heights"
             then "Marina-Time"
@@ -24,7 +24,7 @@ module PostsHelper
             then "Sketchville"
 
             when "Outer Richmond", "Inner Richmond", "Inner Sunset", "Outer Sunset", "Presidio", "Golden Gate Park"
-            then "Nowhere land" 
+            then "Nowhereland" 
             
             
             else
