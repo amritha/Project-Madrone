@@ -1,11 +1,12 @@
 /*
  *= require_self
- */
+*/
 
 @import "posts.css.scss";
 @import "skeleton.css.scss";
 @import "form.css.scss";
 @import "jquery.selectBox.css.scss";
+@import "neighborhoods.css.scss";
 
 /* Reset & Basics (Inspired by E. Meyers / Provided by Skeleton) */
 
@@ -245,4 +246,3 @@ footer {
       width: 0;
       height: 0;
     }
-

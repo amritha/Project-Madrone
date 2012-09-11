@@ -15,4 +15,4 @@
 //= require tabs
 //= require_tree .
 
-//<script src="jquery.selectbox.min.js" type="text/javascript"></script>
+<script src="jquery.selectbox.min.js" type="text/javascript"></script>

@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#story {
+.story {
 	float:left;
+	width: 100%;
 	height: 300px;
 	background-color: #fbfbf8;
 	border: 1px solid #ebeae0;
@@ -11,8 +12,12 @@
 	border-radius: 5px;
 	margin: 8px 8px;
 	
-	#top {
+	.top {
 		height: 254px;	
+	}
+	
+	&.mission-time {
+	border-bottom: #000 4px solid;
 	}
 }
 

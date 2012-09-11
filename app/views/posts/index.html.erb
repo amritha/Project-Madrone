@@ -16,12 +16,13 @@
 <article>
 <% @posts.each do |post| %>
 
-<div id="story" class="one-third column">
-  <div id="top">
-     <p class="content"><%= post.content %></td></p>
-     <p class="author">-<%= post.attribution %></p>
-   </div><!--end top -->
-   <p class="neighborhood"><%= post.neighborhood %></p>
+<div class="one-third column">
+	<div class="story <%= bucket((post.neighborhood)).downcase.dasherize %>">
+  		<div class="top">
+     		<p class="content"><%= post.content %></p>
+     		<p class="author">-<%= post.attribution %></p>
+   		</div><!--end top -->
+   	<p class="neighborhood"><%= post.neighborhood %></p>
    <!--
 	Here's the time stamp in a format that should work for you
 
@@ -30,6 +31,7 @@
 	Here's the neighborhood variable that you were looking for
    <%= bucket((post.neighborhood)) %>-->
 </div> <!-- end story -->
+</div>
 
 
 <% end %>
