@@ -9,6 +9,10 @@
   		<div class="top">
      		<p class="content"><%= post.content %></p>
      		<p class="author">-<%= post.attribution %></p>
+        <!-- Displaying number of likes -->
+        <%= post.likes.count %>
+        <!-- Actual like control -->
+        <%= link_to 'Like', likes_path(:post_id=> post.id), :method=> :post %>
    		</div><!--end top -->
    	<p class="neighborhood"><%= post.neighborhood %></p>
    <!--

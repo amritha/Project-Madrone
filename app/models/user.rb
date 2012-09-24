@@ -12,4 +12,5 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
 
   has_many :posts
+  has_many :likes
 end
