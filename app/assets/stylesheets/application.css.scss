@@ -64,11 +64,7 @@
 
 		span.heart { color: #e9776c; }
 		
-		a { text-decoration: none; color : #333;
-			&:hover { 
-				span.heart { color: #f89187; }
-				}
-			}
+		a { text-decoration: none; color : #333;}
 	}
 	
 	h2 {
@@ -220,15 +216,10 @@ footer {
 
 .social {
 	margin: 20px auto;
-	width: 230px;
-	
-	.addthis_button_facebook_like {
-		padding-right: 20px;
-	}
+	width: 250px;
 
-	.addthis_button_tweet {
-		position: relative;
-		top: -5px;
+	#widget {
+		margin: 0;
 	}
 }
 
