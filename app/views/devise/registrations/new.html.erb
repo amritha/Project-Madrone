@@ -10,11 +10,14 @@
   <div id="password"><%= f.label :password, :class=> 'label' %><br />
   <%= f.password_field :password %></div>
 
-  <div id="password"><%= f.label :password_confirmation, :class=> 'label' %><br />
+  <div id="passwordconf"><%= f.label :password_confirmation, :class=> 'label' %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.submit "Sign up" %></div>
+  <div id="row">
+  <div id="signin"><%= f.submit "Sign up" %></div>
+</div>
 <% end %>
-
+<div id="links">
 <%= render "devise/shared/links" %>
+</div>
 </article>
