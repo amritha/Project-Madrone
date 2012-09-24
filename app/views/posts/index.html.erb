@@ -3,18 +3,20 @@
 
 <article>
 <% @posts.each do |post| %>
+<% @count= post.likes.count %>
 
 <div class="one-third column">
 	<div class="story <%= bucket((post.neighborhood)).downcase.dasherize %>">
   		<div class="top">
      		<p class="content"><%= post.content %></p>
      		<p class="author">-<%= post.attribution %></p>
-        <!-- Displaying number of likes -->
-        <%= post.likes.count %>
-        <!-- Actual like control -->
-        <%= link_to 'Like', likes_path(:post_id=> post.id), :method=> :post %>
    		</div><!--end top -->
-   	<p class="neighborhood"><%= post.neighborhood %></p>
+		<div class="clearfix">
+		<ul class="bottom">
+   	<li class="neighborhood"><%= post.neighborhood %></li>
+    <li class="count"><span class="num"><%= post.likes.count %></span> <%= link_to '&#x2764;'.html_safe, likes_path(:post_id=> post.id), :method=> :post %></li>
+		</ul>
+		</div>
    <!--
 	Here's the time stamp in a format that should work for you
 
