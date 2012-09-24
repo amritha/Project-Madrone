@@ -1,0 +1,17 @@
+#email {
+	display: block;
+	width: 394px;
+	margin: auto;
+	
+	input#user_email {
+	width: 374px;
+	padding: 10px;
+	
+	background-color: red;
+	}
+	
+	input:-webkit-autofill {
+	background-color: red !important;
+	}
+	
+}
