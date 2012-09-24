@@ -1,6 +1,6 @@
 # RailsAdmin config file. Generated on September 05, 2012 18:49
 # See github.com/sferik/rails_admin for more informations
-
+ADMIN_EMAILS= ['amrithap27@gmail.com', 'sabrinaymajeed@gmail.com']
 RailsAdmin.config do |config|
 
   # If your default_local is different from :en, uncomment the following 2 lines and set your default locale here:
@@ -8,7 +8,11 @@ RailsAdmin.config do |config|
   # I18n.default_locale = :de
 
   config.current_user_method { current_user } # auto-generated
-
+  config.authenticate_with {} # leave it to authorize
+  config.authorize_with do
+    is_admin= ADMIN_EMAILS.include?(current_user.email) if current_user
+    redirect_to main_app.new_user_session_url unless is_admin 
+  end
   # If you want to track changes on your models:
   # config.audit_with :history, User
 

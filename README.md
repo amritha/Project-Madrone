@@ -2,7 +2,7 @@
 
 Hey guys,
 
-We're @amrithap and @sabrina. Two girls who got together one labor day weekend, locked themselves up in a remote forest house, and forced ourselves to learn how to code.
+We're Amritha (@amrithap) and Sabrina (@sabrina). Two girls who got together one labor day weekend, locked themselves up in a remote forest house, and forced themselves to learn how to code.
 
 Hope you enjoy our very first project together and very first real project on github! 
 
