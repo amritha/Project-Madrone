@@ -1,18 +1,24 @@
-<h2>Sign up</h2>
+<article class="container">
+<h1 class="prompt">Sign up</h1>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
+  <div id="email"><%= f.label :email, :class => 'label' %><br />
   <%= f.email_field :email %></div>
 
-  <div><%= f.label :password %><br />
+  <div id="password"><%= f.label :password, :class=> 'label' %><br />
   <%= f.password_field :password %></div>
 
-  <div><%= f.label :password_confirmation %><br />
+  <div id="passwordconf"><%= f.label :password_confirmation, :class=> 'label' %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
+  <div id="row">
+  <div id="signin"><%= f.submit "Sign up" %></div>
 
+<% end %>
+<div id="links">
 <%= render "devise/shared/links" %>
+</div>
+</div>
+</article>
