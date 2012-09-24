@@ -13,68 +13,68 @@
 	margin: 8px 0px;
 	
 	.top {
-		height: 254px;	
+		height: 270px;	
 	}
 	
 	&.mission-time {
 	border-bottom: #92adc8 4px solid;
 		
-		p.neighborhood { color: #679358; }
+		li.neighborhood { color: #679358; }
 		 
 	}
 	
 	&.downtown {
 	border-bottom: #c7cbcd 4px solid;
 		
-		p.neighborhood { color: #7288a0; }
+		li.neighborhood { color: #7288a0; }
 		 
 	}
 	
 	&.alamo-squarea {
 	border-bottom: #679358 4px solid;
 		
-		p.neighborhood { color: #8e4d24; }
+		li.neighborhood { color: #8e4d24; }
 		 
 	}
 	
 	&.marina-time{
 	border-bottom: #92adc8 4px solid;
 		
-		p.neighborhood { color: #8e4d24; }
+		li.neighborhood { color: #8e4d24; }
 		 
 	}
 
 	&.pac-heights {
 	border-bottom: #ad9973 4px solid;
 		
-		p.neighborhood { color: #4a2112; }
+		li.neighborhood { color: #4a2112; }
 		 
 	}
 	
 	&.castroish {
 	border-bottom: #bacac7 4px solid;
 		
-		p.neighborhood { color: #4a2112; }
+		li.neighborhood { color: #4a2112; }
 		 
 	}
 	
 	&.sketchville {
 	border-bottom: #c7cbcd 4px solid;
 		
-		p.neighborhood { color: #8e4d24; }
+		li.neighborhood { color: #8e4d24; }
 		 
 	}
 
 	&.nowhereland {
 	border-bottom: #a8bfad 4px solid;
 		
-		p.neighborhood { color: #7288a0; }
+		li.neighborhood { color: #7288a0; }
 		 
 	}
 		
 }
 
-p.content, p.neighborhood { padding: 20px 24px 0px 24px; }
+p.content, li.neighborhood { padding: 20px 22px 0px 22px; }
 
 p.content {
 	color: #333;
@@ -89,34 +89,61 @@ p.author {
 	padding: 10px 24px;
 }
 
-p.neighborhood {
+.container ul.bottom {
+text-align: left;
+}
+
+li.neighborhood {
 	text-transform: uppercase;
 	color: #679358;
 	font-size: .8em;
+	padding-right: 0px;
+	padding-top:0px;
 	letter-spacing: .2em;
 }
+
+	li.count {
+		float: right;
+		padding-right: 18px;
+		color: #666;
+		
+		.num {
+		font-size: .9em;
+		}
+		
+		a {
+		text-decoration: none;
+		color: #c7cbcd;
+		position: relative;
+		top: 1px;
+		
+		&:active, &:hover, &:visited { color: #e9776c;}
+		}
+}
+
 
 /* Responsive Posts & Stuff */
 
 @media only screen and (max-width: 767px) {
 
-#story { margin: 8px 0; }
+.story { margin: 8px 0; }
 
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-#story { height: 250px;	
+.story { height: 250px;	
 	
-	#top { height: 204px; }
+	.top { height: 220px; }
 	}
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	
-#story { height: 350px;	
+.story { height: 350px;	
 	
-	#top { height: 304px; }
+	.top { height: 320px; }
 	}
 }
+

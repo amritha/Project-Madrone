@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script type="text/javascript" src="//use.typekit.net/his8qus.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <title>I Love You SF</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+	 <!-- Favicon -->
+	   <link rel="shortcut icon" href="assets/favicon.ico" />
+</head>
+
   <header class="clearfix">
 <div class="container">
   
@@ -22,9 +27,7 @@
 </ul>
 </header>
 </div>
- <!-- Favicon -->
-   <link rel="shortcut icon" href="assets/favicon.ico" />
-</head>
+
 <body>
  <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
