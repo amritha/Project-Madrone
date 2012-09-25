@@ -20,7 +20,7 @@ module PostsHelper
             when "Twin Peaks", "Castro", "Lower Haight", "Noe Valley"
             then "Castroish"
 
-            when "Civic Center", "Tenderloin", "Nob Hill", "Russian Hill" "Chinatown"
+            when "Civic Center", "Tenderloin", "Nob Hill", "Russian Hill" "Chinatown", "Napa"
             then "Sketchville"
 
             when "Outer Richmond", "Inner Richmond", "Inner Sunset", "Outer Sunset", "Presidio", "Golden Gate Park"

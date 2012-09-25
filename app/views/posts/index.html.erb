@@ -9,7 +9,9 @@
 	<div class="story <%= bucket((post.neighborhood)).downcase.dasherize %>">
   		<div class="top">
      		<p class="content"><%= post.content %></p>
+        <% if post.attribution!= nil %>
      		<p class="author">-<%= post.attribution %></p>
+        <% end %>
    		</div><!--end top -->
 		<div class="clearfix">
 		<ul class="bottom">
